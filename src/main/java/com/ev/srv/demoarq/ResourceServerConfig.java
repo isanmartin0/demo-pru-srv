@@ -108,6 +108,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 			public CustomAuthentication(Object principal, Object credentials) {
 				super(principal, credentials);
+				System.out.println("Principal "+ principal);
+				System.out.println("CRedentials " + credentials);
 			}
 
 		}
