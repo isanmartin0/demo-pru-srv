@@ -6,15 +6,10 @@ import com.ev.srv.demoarq.model.EE_I_PosicionCliente;
 import com.ev.srv.demoarq.model.User;
 
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
-import java.util.List;
 
 /**
  * A delegate to be called by the {@link UsersController}}.
