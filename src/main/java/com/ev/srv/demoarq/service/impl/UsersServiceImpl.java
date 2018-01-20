@@ -32,7 +32,7 @@ public class UsersServiceImpl implements UsersService{
     	
     	
     	String fooResourceUrl
-    	  = "https://apiuat.evobanco.com/fullonline/rsi_api/posicion/v2.0.0";
+    	  = "https://apiuat.evobanco.com:8443/fullonline/rsi_api/posicion/v2.0.0";
     	
     	String response
     	  = restTemplate.postForObject(fooResourceUrl,cliente, String.class);
