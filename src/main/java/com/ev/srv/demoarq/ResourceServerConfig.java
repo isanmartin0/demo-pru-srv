@@ -46,9 +46,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers("/swagger-ui.html").permitAll().antMatchers("/api/**").authenticated().and()
-				.addFilterAfter(customFilter, AbstractPreAuthenticatedProcessingFilter.class).exceptionHandling()
-				.authenticationEntryPoint(new CustomEntryPoint());
+//		http.authorizeRequests().antMatchers("/swagger-ui.html").permitAll().antMatchers("/api/**").authenticated().and()
+//				.addFilterAfter(customFilter, AbstractPreAuthenticatedProcessingFilter.class).exceptionHandling()
+//				.authenticationEntryPoint(new CustomEntryPoint());
+		
+		http.authorizeRequests().antMatchers("/**").permitAll();
 	}
 
 	public class CustomEntryPoint implements AuthenticationEntryPoint {
