@@ -5,6 +5,7 @@ import com.evo.api.springboot.exception.EntityNotFoundException;
 import com.ev.srv.demoarq.model.EE_I_PosicionCliente;
 import com.ev.srv.demoarq.model.User;
 
+import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -34,10 +35,14 @@ public class UsersServiceImpl implements UsersService{
     	String fooResourceUrl
     	  = "https://apiuat.evobanco.com:8443/fullonline/rsi_api/posicion/v2.0.0";
     	
+    	try {
+    		log.info("Get posicion global");
     	String response
     	  = restTemplate.postForObject(fooResourceUrl,cliente, String.class);
     	log.info("String " + response);
-    	
+    	} catch (HttpStatusCodeException  ex) {
+    		log.error("ERrrow "   + ex.getResponseBodyAsString());
+    	}
         if ("0".equalsIgnoreCase(userId)) {
         	throw new EntityNotFoundException(User.class, "userId", userId);
         }
