@@ -34,7 +34,7 @@ public class UsersServiceImpl implements UsersService{
     	
     	String fooResourceUrl
     	 // = "https://apiuat.evobanco.com:8443/fullonline/rsi_api/posicion/v2.0.0";
-    	="https://52.138.140.198:8443/fullonline/rsi_api/posicion/v2.0.0";
+    	="https://apiuat.evobanco.com:8443/fullonline/rsi_api/posicion/v2.0.0";
     	try {
     		log.info("Get posicion global");
     	String response
