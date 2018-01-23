@@ -8,34 +8,11 @@ objects:
   metadata:
     annotations:
       openshift.io/generated-by: OpenShiftNewApp
-    creationTimestamp: null
-    generation: 8
-    labels:
-      app: ${PROJECT}
-    name: ${PROJECT}
-  spec:
-    tags:
-    - annotations: null
-      from:
-        kind: DockerImage
-        name: "${DOCKER_REGISTRY}:5000/${PROJECT}-${BRANCH_NAME_HY}/${PROJECT}:latest"
-      generation: null
-      importPolicy: {}
-      name: latest
-      referencePolicy:
-        type: ""
-  status:
-    dockerImageRepository: ""
-- apiVersion: v1
-  kind: ImageStream
-  metadata:
-    annotations:
-      openshift.io/generated-by: OpenShiftNewApp
       openshift.io/image.dockerRepositoryCheck: 2017-06-27T21:31:05Z
     generation: 1
     labels:
       app: ${PROJECT}
-    name: webserver31-tomcat8-openshift
+    name: ${PROJECT}
   spec: {}
   status:
     dockerImageRepository: ""
@@ -59,11 +36,10 @@ objects:
     source:
       git:
         ref: master
-        uri: https://github.com/jucaf/jws-java-appdynamics
-      contextDir: "src/main/docker"
+        uri: https://github.com/jucaf/ews-bin-deploy.git
       type: Git
     strategy:
-      dockerStrategy:
+      sourceStrategy:
         env:
         - name: WAR_FILE_URL
           value: ${WAR_FILE_URL}
@@ -71,9 +47,9 @@ objects:
           value: ${ARTIFACTORY_TOKEN}
         from:
           kind: ImageStreamTag
-          name: jboss-webserver31-tomcat8-openshift:1.1-5
+          name: jws-java-appdynamics:1.0
           namespace: openshift
-      type: Docker
+      type: Source
     triggers:
     - type: ConfigChange
   status:
@@ -170,11 +146,6 @@ objects:
       name: ${PROJECT}
       weight: 100
     wildcardPolicy: None
-  status:
-    ingress:
-    - host: "${PROJECT}-${BRANCH_NAME_HY}.svcs${envLabel}.grupoevo.corp"
-      routerName: router
-      wildcardPolicy: None
 parameters:
 - description: "Project name"
   name: "PROJECT"
