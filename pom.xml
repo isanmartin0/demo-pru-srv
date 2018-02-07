@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<evo.version>0.0.1-SNAPSHOT</evo.version>
 		<java.version>1.8</java.version>
+		<fakeProperty>xxxx</fakeProperty>
 	</properties>
 
 	<dependencies>
