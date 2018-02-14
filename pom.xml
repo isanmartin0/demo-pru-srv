@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>demoarq</name>
-	<description>Demo project for Spring Bootggggg</description>
+	<description>Demo project for Spring Bootgggggg</description>
 	<url>https://github.com/isanmartin0/demoarq-srv.git</url>
 
 	<parent>
