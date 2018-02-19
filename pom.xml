@@ -10,6 +10,7 @@
 
 	<name>demoarq</name>
 	<description>Demo project for Spring Boot</description>
+	<url>https://github.com/isanmartin0/demo-pru-srv.git</url>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
