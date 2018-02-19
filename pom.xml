@@ -8,7 +8,7 @@
 	<version>0.0.1-RELEASE</version>
 	<packaging>war</packaging>
 
-	<name>demoarq</name>
+	<name>demopru</name>
 	<description>Demo project for Spring Boot</description>
 	<url>https://github.com/isanmartin0/demo-pru-srv.git</url>
 
