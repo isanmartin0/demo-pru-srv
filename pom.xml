@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ev</groupId>
-	<artifactId>demoarq-srv</artifactId>
+	<artifactId>demo-pru-srv</artifactId>
 	<version>0.0.1-RELEASE</version>
 	<packaging>war</packaging>
 
