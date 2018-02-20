@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.ev</groupId>
+	<!--groupId>com.ev</groupId-->
 	<artifactId>demo-pru-srv</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -12,10 +12,10 @@
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
-		<groupId>com.evobanco</groupId>
-		<artifactId>springboot-web-tomcat-java8-parent</artifactId>
-		<version>1.0.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.9.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	
 	<properties>
