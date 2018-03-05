@@ -1,9 +1,4 @@
-package src.test.resources.taurus.performance_test
-
-import java.security.MessageDigest
-
-import io.gatling.core.Predef._
-import io.gatling.http.Predef._
+package src.test.taurus
 
 class BasicSimulation extends Simulation {
 
