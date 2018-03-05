@@ -46,7 +46,7 @@ class BasicSimulation extends Simulation {
     exec(
       http("satisfaction")
         //.post("/satisfaction")
-        .get("/apps/campaigns/v1/health")
+        .get("/health")
         //.header("Content-Type", "application/json")
         //.body(StringBody(session => satisfactionGenerator(session))).asJSON
     )
