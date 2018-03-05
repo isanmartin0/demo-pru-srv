@@ -1,4 +1,4 @@
-package src.test.taurus
+package src.test.taurus.performance_test
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
