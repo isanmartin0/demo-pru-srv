@@ -5,7 +5,7 @@ execution:
   hold-for: 30s
   scenario:
     script: satisfaction.scala
-    simulation: src.test.resources.taurus.BasicSimulation
+    simulation: src.test.taurus.BasicSimulation
     keepalive: true
 
 # http://gettaurus.org/docs/ScenarioBuilding/

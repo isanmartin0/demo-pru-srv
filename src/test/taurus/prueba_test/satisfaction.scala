@@ -1,4 +1,4 @@
-package src.test.resources.taurus
+package src.test.taurus
 
 import java.security.MessageDigest
 
