@@ -1,6 +1,6 @@
 execution:
-- executor: gatling
-  concurrency: 20
+- executor: jmeter
+  concurrency: 10
   ramp-up: 5s
   hold-for: 5s
   scenario: scenario-default
@@ -22,4 +22,4 @@ scenarios:
 
 reporting:
   - module: final-stats
-    dump-xml: scenario-default-security-health-stats.xml
+    dump-xml: scenario-default-acceptance-health-jmeter-stats.xml
