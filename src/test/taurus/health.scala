@@ -1,5 +1,8 @@
 package src.test.taurus
 
+import io.gatling.core.Predef._
+import io.gatling.http.Predef._
+
 class BasicSimulation extends Simulation {
 
     // parse load profile from Taurus
