@@ -1,8 +1,8 @@
 execution:
 - executor: gatling
   concurrency: 10
-  ramp-up: 5s
-  hold-for: 5s
+  ramp-up: 10s
+  hold-for: 40s
   scenario: scenario-default
 
 # http://gettaurus.org/docs/ScenarioBuilding/
