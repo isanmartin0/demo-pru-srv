@@ -1,8 +1,8 @@
 execution:
 - executor: gatling
-  concurrency: 1
+  concurrency: bb
   ramp-up: 0s
-  hold-for: 0s
+  hold-for: aa
   iterations: 1
   scenario: scenario-default
 
