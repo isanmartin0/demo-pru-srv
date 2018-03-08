@@ -1,7 +1,7 @@
 execution:
 - executor: gatling
   concurrency: 10
-  ramp-up: 2s
+  ramp-up: 25s
   hold-for: 5s
   scenario: scenario-default
 
