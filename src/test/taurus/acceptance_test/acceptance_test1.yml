@@ -1,6 +1,6 @@
 execution:
 - executor: gatling
-  concurrency: 50
+  concurrency: AA
   ramp-up: 10s
   hold-for: 20s
   iterations: 1
