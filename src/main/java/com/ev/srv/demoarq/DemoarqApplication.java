@@ -6,7 +6,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 public class DemoarqApplication extends SpringBootServletInitializer{
-
+    //MAin method
 	public static void main(String[] args) {
 		SpringApplication.run(DemoarqApplication.class, args);
 	}
